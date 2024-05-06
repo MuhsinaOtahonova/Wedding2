@@ -1,0 +1,307 @@
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 2px dotted #DE2E54;
+    outline-offset: 2px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+    line-height: 1.5;
+    background-color: #fcfcfc;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6d4e3f;
+}
+
+.text {
+    opacity: 0.8;
+    color: #8a6a5a;
+}
+
+.line {
+    width: 100%;
+}
+
+.section-margin {
+    margin-top: 150px;
+}
+
+h3{
+    font-size: 20px;
+    color: #6d4e3f;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6d4e3f;
+    width: 250px;
+    text-transform: uppercase;
+    color: white;
+}
+.button:hover {
+    opacity: 0.8;
+}
+.button:active {
+    opacity: 0.6;
+}
+
+.button-link {
+    text-decoration: none;
+
+}
+
+
+/*site-header*/
+.site-head {
+    background: linear-gradient(to top,
+            rgba(165, 105, 84, 0.1),
+            rgba(147, 119, 110, 0.3)), url("../img/site-head.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    color: white;
+    -webkit-clip-path: ellipse(81% 59% at 50% 40%);
+    clip-path: ellipse(81% 59% at 50% 40%);
+
+}
+
+.site-head-content {
+    height: 100vh;
+}
+
+.site-head-heading {
+    margin-bottom: 100px;
+    width: 700px;
+}
+.site-head-heading .names{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.footer .names{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #6d4e3f;
+}
+.site-head-heading .heading{
+    font-size: large;
+}
+
+
+.site-head-heading p,
+.site-head-heading h1{
+    color: white !important;
+}
+/*bride-groom*/
+.bride-groom-text {
+    max-width: 600px;
+}
+
+.bride-groom-photo {
+    border-radius: 10px;
+
+}
+
+.photo-box img {
+    transition: transform 1s, filter 1s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(80%);
+}
+
+.photo-box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.photo-box:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+}
+
+
+
+/*timer*/
+.timer {
+    background-color: #f3eee7;
+}
+
+.timer-content img ,.hidden-date img
+{
+    border-radius: 10px;
+}
+
+.timer-content .photo-box 
+{
+    transform: translateY(-35%);
+    position: relative;
+}
+.hidden-date .photo-box{
+    position: relative;
+}
+.hidden-date .photo-box img{
+    filter: brightness(50%);
+}
+.timer-content .photo-box img{
+    filter: brightness(50%);
+}
+.date-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/*when-where*/
+.when-where-heading {
+    padding: 50px 0 50px 50px;
+    width: 700px;
+    background-color: #f3eee7;
+}
+
+.when-where-heading-text {
+    width: 340px;
+}
+
+.when-where-heading-photo {
+    border-radius: 10px;
+}
+
+.when-where-heading-photo-box {
+    position: absolute;
+    transform: translateY(20%);
+    right: 72px;
+}
+
+/*gallery*/
+.gallery-photo {
+    object-fit: cover;
+}
+
+/*rsvp*/
+.rsvp {
+    background-color: #f3eee7;
+    padding: 30px 0 30px 0;
+    -webkit-clip-path: ellipse(81% 59% at 50% 40%);
+    clip-path: ellipse(81% 59% at 50% 40%);
+    color: #6d4e3f;
+}
+
+.rsvp .button {
+    background-color: #6d4e3f;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    /*heading*/
+    .site-head ,
+    .rsvp{
+        -webkit-clip-path: ellipse(95% 59% at 50% 40%);
+        clip-path: ellipse(95% 59% at 50% 40%);
+    
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .site-head-heading {
+        width: 400px;
+    }
+
+    .section-margin {
+        margin-top: 100px;
+    }
+    .site-head-heading .names{
+        font-size: 30px;
+    }
+    .footer .names{
+        font-size: 30px;
+    }
+    .site-head-heading .heading{
+        font-size: medium;
+    }
+    /*bride-groom*/
+   
+    .bride-groom-content{
+        flex-direction: column;
+    }
+    .down{
+        display: none;
+    }
+    .bride-groom-text {
+        max-width: 250px;
+    }
+    .sign img{
+        width: 100px;
+        height: 100px;
+    }
+    .bride-groom-photo{
+        width: 250px;
+        height: 350px;
+    }
+    /*timer*/
+    .timer{
+        margin-top: 100px;
+    }
+    .timer-content .photo-box {
+        display: none;
+    }
+    .timer-content{
+        padding: 30px;
+    }
+ /*when-where*/
+.when-where-heading {
+    padding: 20px;
+    width: 100%;
+    background-color: #f3eee7;
+}
+
+.when-where-heading-text {
+    width: 240px;
+}
+.when-where-heading-photo-box,.detail{
+    display: none;
+}
+    /*rsvp*/
+.footer-text{
+    font-size: 10px;
+}
+    
+}
+
+@media (width: 768px) {
+  .bride-groom-photo{
+        width: 220px;
+        height: 320px;
+    }
+    .bride-groom-text {
+        max-width: 430px;
+    }
+    .when-where-heading-photo-box{
+        display: none;
+    }
+}
