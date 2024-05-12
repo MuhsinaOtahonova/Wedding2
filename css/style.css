@@ -249,9 +249,7 @@ h3{
     .bride-groom-content{
         flex-direction: column;
     }
-    .down{
-        display: none;
-    }
+   
     .bride-groom-text {
         max-width: 250px;
     }
