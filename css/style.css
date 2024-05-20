@@ -50,6 +50,7 @@ h3{
 .bosluk{
     padding: 20px;
 }
+
 .button {
     padding: 10px;
     border-radius: 10px;
@@ -75,8 +76,6 @@ h3{
     text-decoration: none;
 
 }
-
-
 /*site-header*/
 .site-head {
     background: linear-gradient(to top,
@@ -141,6 +140,8 @@ h3{
     background-color: white;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    height: auto;
+
 }
 
 .photo-box:hover img {
@@ -186,29 +187,58 @@ h3{
 }
 
 /*when-where*/
-.when-where-heading {
-    padding: 50px 50px 50px 50px;
-    background-color: #f3eee7;
-}
-
-.when-where-heading-text {
-    width: 340px;
-}
-
-.when-where-heading-photo {
+.process-photo {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: center;
     border-radius: 10px;
 }
-
-.when-where-heading-photo-box {
-    position: relative;
-        transform: translateY(30%);
-        height: 100%;
- 
-   
-
+.heading-section {
+    text-align: left;
+    background-color: #f3eee7; /* Açık gri arka plan rengi */
+    padding: 50px;
 }
-.when-where-cont{
-    background-color: #f3eee7;
+
+.photo-container {
+    background-color: white; /* Kırmızı arka plan rengi */ 
+    position: relative;
+}
+.mm{
+    padding: 10px;
+}
+.mm .photo-box{
+    height: 100%;
+    top: 50px;
+    transform: translateX(-7%);
+}
+@media (max-width: 767px) {
+    .mm .photo-box{
+    height: 100%;
+    top: 0px;
+    transform: translateX(0%);
+    margin-top: 150px;
+    }
+    
+}
+
+@media (width: 768px) {
+    .process-photo {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 10px; 
+}
+.heading-section {
+    text-align: left;
+    background-color: #f3eee7; /* Açık gri arka plan rengi */
+    padding: 50px;
+}
+    .mm .photo-box{
+    transform: translateX(-5%);
+    top: 70px;
+}
 }
 
 /*gallery*/
@@ -284,24 +314,17 @@ h3{
     .timer-content{
         padding: 30px;
     }
- /*when-where*/
-.when-where-heading {
-    padding: 20px;
-    width: 100%;
-    background-color: #f3eee7;
-}
 
-.when-where-heading-text {
-    width: 240px;
-}
-.when-where-heading-photo-box,.detail{
+
+.detail{
     display: none;
 }
     /*rsvp*/
 .footer-text{
     font-size: 10px;
 }
-    
+
+
 }
 
 @media (width: 768px) {
@@ -312,12 +335,15 @@ h3{
     .bride-groom-text {
         max-width: 430px;
     }
-.when-where-heading-photo{
-    width: 100%;
-    height: auto;
+
+.denem{
+    transform: translateX(0%);
+} 
+
 }
-.when-where-heading-photo-box{
-    width: 100%;
-    height: 100%;
+
+@media (min-width: 1025px) {
+.denem{
+    transform: translateX(-40%);
 }
 }
