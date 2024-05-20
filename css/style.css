@@ -47,7 +47,9 @@ h3{
     font-size: 20px;
     color: #6d4e3f;
 }
-
+.bosluk{
+    padding: 20px;
+}
 .button {
     padding: 10px;
     border-radius: 10px;
@@ -58,9 +60,15 @@ h3{
 }
 .button:hover {
     opacity: 0.8;
+    background-color: #6d4e3f;
+    text-transform: uppercase;
+    color: white;
 }
 .button:active {
     opacity: 0.6;
+    background-color: #6d4e3f;
+    text-transform: uppercase;
+    color: white;
 }
 
 .button-link {
@@ -179,8 +187,7 @@ h3{
 
 /*when-where*/
 .when-where-heading {
-    padding: 50px 0 50px 50px;
-    width: 700px;
+    padding: 50px 50px 50px 50px;
     background-color: #f3eee7;
 }
 
@@ -193,9 +200,15 @@ h3{
 }
 
 .when-where-heading-photo-box {
-    position: absolute;
-    transform: translateY(20%);
-    right: 72px;
+    position: relative;
+        transform: translateY(30%);
+        height: 100%;
+ 
+   
+
+}
+.when-where-cont{
+    background-color: #f3eee7;
 }
 
 /*gallery*/
@@ -299,7 +312,12 @@ h3{
     .bride-groom-text {
         max-width: 430px;
     }
-    .when-where-heading-photo-box{
-        display: none;
-    }
+.when-where-heading-photo{
+    width: 100%;
+    height: auto;
+}
+.when-where-heading-photo-box{
+    width: 100%;
+    height: 100%;
+}
 }
