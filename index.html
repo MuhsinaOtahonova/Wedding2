@@ -31,17 +31,21 @@
 
 <body>
     <!--site-header-->
+    <div class="change-theme">
+        <a class="button-link" id="changeColorButton"><button class="button btn ">✨</button></a>
+    </div>
     <header class="site-head z-0" id="head">
+        <div class="background-blur"></div>
         <div class="site-head-content d-flex justify-content-center align-items-center  align-items-lg-end text-center">
             <div class="site-head-heading z-1 bosluk">
                 <div class="names mb-5">
-                    <hr>
+                    <hr class="hr">
                     <div class="d-flex justify-content-center">
                         <h1 class="names">Kozy</h1>
                         <h1 class="names names-sign mx-4"> & </h1>
                         <h1 class="names">Bayan</h1>
                     </div>
-                    <hr>
+                    <hr class="hr">
                 </div>
                 <h1 class="heading">Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран,
                     әріптестер.</h1>
@@ -52,14 +56,14 @@
     </header>
     <!--line-flower-->
     <div class="d-flex justify-content-center section-margin align-items-center container">
-        <hr class="line">
+        <hr class="line hr">
         <img src="img/flower.png" alt="flower" width="200" height="110">
-        <hr class="line">
+        <hr class="line hr">
     </div>
     <!--bride-groom-->
     <div class="bride-groom section-margin" id="bride-groom">
         <div class="container">
-            <h2 class="heading bride-groom-heading mb-4 text-center text-md-start">Тойға шақыру
+            <h2 class="heading bride-groom-heading mb-4 text-center text-md-start d-flex justify-content-start">Тойға шақыру
                 Ақ үміт, асыл мақсат бойымызда</h2>
             <div class="bride-groom-content d-flex justify-content-between">
                 <div class="d-flex justify-content-center">
@@ -82,7 +86,7 @@
                 </div>
                 <div class="d-flex justify-content-center align-items-start denem">
                     <div class="photo-box">
-                        <img src="img/gallery-img-5.jpeg" class="bride-groom-photo" width="300" height="450"
+                        <img src="img/gallery-img-5.jpeg" class="bride-groom-photo" width="380" height="auto"
                             alt="bride-groom">
                     </div>
                 </div>
@@ -92,13 +96,13 @@
     <!--timer-->
     <div class="timer section-margin" id="timer">
         <div class="container">
-            <div class="timer-content d-flex align-items-center justify-content-between">
+            <div class="timer-content d-flex align-items-center justify-content-between justify-content-lg-around">
                 <div class="photo-box">
                     <img src="img/wedding-hall.jpeg" class="wedding-hall-photo" width="300" height="250"
                         alt="wedding hall">
                     <div class="date-overlay">
-                        <hr><span>20.06.2024</span>
-                        <hr>
+                        <hr class="hr"><span>20.06.2024</span>
+                        <hr class="hr">
                     </div>
                 </div>
                 <div class="text-center">
@@ -122,17 +126,17 @@
     </div>
     <!--line-flower-->
     <div class="d-flex justify-content-center section-margin align-items-center container">
-        <hr class="line">
+        <hr class="line hr">
         <img src="img/flower.png" alt="flower" width="200" height="110">
-        <hr class="line">
+        <hr class="line hr">
     </div>
     <!---->
     <div class="container section-margin hidden-date d-md-none d-flex justify-content-center">
         <div class="photo-box">
             <img src="img/wedding-hall.jpeg" class="" width="250" height="230" alt="wedding hall">
             <div class="date-overlay">
-                <hr><span>20.06.2024</span>
-                <hr>
+                <hr class="hr"><span>20.06.2024</span>
+                <hr class="hr">
             </div>
         </div>
     </div>
@@ -175,7 +179,6 @@
             </div>
         </div>
     </div>
-
     <!--gallery-->
     <div class="gallery section-margin" id="gallery">
         <div class="container">
@@ -226,9 +229,9 @@
         <div class="container text-center">
             <!--line-flower-->
             <div class="d-flex justify-content-center mt-5 mb-5 align-items-center container">
-                <hr class="line">
+                <hr class="line hr">
                 <img src="img/flower.png" alt="flower" width="200" height="110">
-                <hr class="line">
+                <hr class="line hr">
             </div>
             <h3 class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, fugit.</p>
@@ -237,17 +240,17 @@
                     rows="3"></textarea>
             </div>
             <div class="row">
-                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Есіміңіз">
                 </div>
-                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Есіміңіз">
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <input type="tel" class="form-control" id="exampleFormControlInput1"
                         placeholder="Телефон номеріңіз">
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-12 col-md-3">
                     <input type="number" class="form-control" id="exampleFormControlInput1"
                         placeholder="Қанша кісі келесіздер">
                 </div>
@@ -255,6 +258,7 @@
             <a class="button-link" href="#"><button class="button btn mt-5 mb-5">ТОЙҒА ҚАТЫСАМЫН</button></a>
         </div>
     </div>
+    
     <!--footer-->
     <footer class="footer section-margin" id="footer">
         <div class="container">
@@ -265,7 +269,7 @@
                     <h1 class="names">Bayan</h1>
                 </div>
             </div>
-            <hr>
+            <hr class="hr">
             <div class="d-flex justify-content-between">
                 <p class="text footer-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p class="text footer-text">Lorem ipsum dolor sit amet consectetur.</p>
@@ -282,6 +286,7 @@
     <!--js-->
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.0/scrollreveal.min.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/theme.js"></script>
     <script src="js/main.js"></script>
 </body>
 
