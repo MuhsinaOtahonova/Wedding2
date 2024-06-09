@@ -17,17 +17,17 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // HTML'e güncel değerleri yerleştir
-    document.getElementById("days").innerHTML = "<p class='heading fs-1'>" + days + "</p>";
-    document.getElementById("hours").innerHTML = "<p class='heading fs-1'>" + hours + "</p>";
-    document.getElementById("minutes").innerHTML = "<p class='heading fs-1'>" + minutes + "</p>";
-    document.getElementById("seconds").innerHTML = "<p class='heading fs-1'>" + seconds + "</p>";
+    document.getElementById("days").innerHTML = "<p class=' date fs-1'>" + days + "</p>";
+    document.getElementById("hours").innerHTML = "<p class=' date fs-1'>" + hours + "</p>";
+    document.getElementById("minutes").innerHTML = "<p class=' date fs-1'>" + minutes + "</p>";
+    document.getElementById("seconds").innerHTML = "<p class=' date fs-1'>" + seconds + "</p>";
 
     // Eğer geri sayım tamamlanmışsa, yazıyı değiştir
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("days").innerHTML = "<p class='heading fs-1'>EXPIRED</p>";
-        document.getElementById("hours").innerHTML = "<p class='heading fs-1'>EXPIRED</p>";
-        document.getElementById("minutes").innerHTML = "<p class='heading fs-1'>EXPIRED</p>";
-        document.getElementById("seconds").innerHTML = "<p class='heading fs-1'>EXPIRED</p>";
+        document.getElementById("days").innerHTML = "<p class='date fs-1'>EXPIRED</p>";
+        document.getElementById("hours").innerHTML = "<p class='date fs-1'>EXPIRED</p>";
+        document.getElementById("minutes").innerHTML = "<p class='date fs-1'>EXPIRED</p>";
+        document.getElementById("seconds").innerHTML = "<p class='date fs-1'>EXPIRED</p>";
     }
 }, 1000);

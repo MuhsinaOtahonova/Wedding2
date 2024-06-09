@@ -22,6 +22,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <!--style-->
     <link rel="stylesheet" href="css/style.css">
     <!--Favicon-->
@@ -49,7 +55,7 @@
                 </div>
                 <h1 class="heading">Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран,
                     әріптестер.</h1>
-                <p class="text">Тойымыздың құрметті қонағы болуға шақырамыз</p>
+                <p class="text1">Тойымыздың құрметті қонағы болуға шақырамыз</p>
                 <a class="button-link" href="#rsvp"><button class="button btn">rsvp</button></a>
             </div>
         </div>
@@ -57,22 +63,23 @@
     <!--line-flower-->
     <div class="d-flex justify-content-center section-margin align-items-center container">
         <hr class="line hr">
-        <img src="img/flower.png" alt="flower" width="200" height="110">
+        <img src="img/flower.png" alt="flower"  class="flower" id="flowerImage" width="200" height="110">
         <hr class="line hr">
     </div>
     <!--bride-groom-->
     <div class="bride-groom section-margin" id="bride-groom">
         <div class="container">
-            <h2 class="heading bride-groom-heading mb-4 text-center text-md-start d-flex justify-content-start">Тойға шақыру
+            <h2 class="heading bride-groom-heading mb-4 text-center text-md-start d-flex justify-content-start">Тойға
+                шақыру
                 Ақ үміт, асыл мақсат бойымызда</h2>
             <div class="bride-groom-content d-flex justify-content-between">
                 <div class="d-flex justify-content-center">
                     <div class="bride-groom-text text-center text-md-start">
-                        <p class="text">Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран,
+                        <p class="text1">Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран,
                             әріптестер. Сіз(дер)ді баламыз Төлеген мен келініміз Жібектің үйлену тойына арналған
                             салтанатты
                             дастарханымыздың қадірлі қонағы болуыңызға шақырамыз!</p>
-                        <p class="text">Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран,
+                        <p class="text1">Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жаран,
                             әріптестер. Сіз(дер)ді баламыз Төлеген мен келініміз Жібектің үйлену тойына арналған
                             салтанатты
                             дастарханымыздың қадірлі қонағы болуыңызға шақырамыз! Құрметті ағайын-туыс, бауырлар,
@@ -101,24 +108,24 @@
                     <img src="img/wedding-hall.jpeg" class="wedding-hall-photo" width="300" height="250"
                         alt="wedding hall">
                     <div class="date-overlay">
-                        <hr class="hr"><span>20.06.2024</span>
+                        <hr class="hr date"><span>20.06.2024</span>
                         <hr class="hr">
                     </div>
                 </div>
                 <div class="text-center">
-                    <p class="heading fs-1 " id="days"></p>
+                    <p class="heading fs-1 date" id="days"></p>
                     <p class="text">days</p>
                 </div>
                 <div class="text-center">
-                    <p class="heading fs-1" id="hours"></p>
+                    <p class="heading fs-1 date" id="hours"></p>
                     <p class="text">hours</p>
                 </div>
                 <div class="text-center">
-                    <p class="heading fs-1" id="minutes"></p>
+                    <p class="heading  fs-1 date" id="minutes"></p>
                     <p class="text">minutes</p>
                 </div>
                 <div class="text-center">
-                    <p class="heading fs-1" id="seconds"></p>
+                    <p class="heading fs-1 date" id="seconds"></p>
                     <p class="text">seconds</p>
                 </div>
             </div>
@@ -127,7 +134,7 @@
     <!--line-flower-->
     <div class="d-flex justify-content-center section-margin align-items-center container">
         <hr class="line hr">
-        <img src="img/flower.png" alt="flower" width="200" height="110">
+        <img src="img/flower.png" alt="flower"  class="flower" id="flowerImage2" width="200" height="110">
         <hr class="line hr">
     </div>
     <!---->
@@ -144,7 +151,8 @@
     <div class="when-where section-margin" id="when-where">
         <div class="container">
             <div class="row mm">
-                <div class="col-md-6 col-lg-6 heading-section d-flex align-items-center justify-content-center justify-content-md-start">
+                <div
+                    class="col-md-6 col-lg-6 heading-section d-flex align-items-center justify-content-center justify-content-md-start">
                     <div class="when-where-heading-text">
                         <h2 class="heading mb-4 text-center text-md-start">Мекен-жайымыз</h2>
                         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt commodi iure
@@ -156,8 +164,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 photo-box photo-container">
-                    <img src="img/wedding-hall-table.jpeg" class="process-photo" 
-                        alt="wedding table">
+                    <img src="img/wedding-hall-table.jpeg" class="process-photo" alt="wedding table">
                 </div>
             </div>
             <div class="row section-margin detail">
@@ -230,7 +237,7 @@
             <!--line-flower-->
             <div class="d-flex justify-content-center mt-5 mb-5 align-items-center container">
                 <hr class="line hr">
-                <img src="img/flower.png" alt="flower" width="200" height="110">
+                <img src="img/flower.png" alt="flower"  class="flower" id="flowerImage1" width="200" height="110">
                 <hr class="line hr">
             </div>
             <h3 class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -258,7 +265,7 @@
             <a class="button-link" href="#"><button class="button btn mt-5 mb-5">ТОЙҒА ҚАТЫСАМЫН</button></a>
         </div>
     </div>
-    
+
     <!--footer-->
     <footer class="footer section-margin" id="footer">
         <div class="container">
